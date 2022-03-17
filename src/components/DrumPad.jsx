@@ -4,6 +4,15 @@
 import React from 'react';
 
 export default function DrumPad(props) {
+  React.useEffect(() => {
+    function playWithKeyboard(event) {
+      if (event.key === props.value || event.key === props.value.toLowerCase()) {
+        props.playDrumPad();
+      }
+    }
+    document.addEventListener('keypress', playWithKeyboard);
+  }, []);
+
   return (
     <button
       type="button"
