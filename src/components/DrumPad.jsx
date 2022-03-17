@@ -1,6 +1,6 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/media-has-caption */
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 
 export default function DrumPad(props) {

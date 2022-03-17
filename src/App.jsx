@@ -29,12 +29,16 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Drum Machine</h1>
       <div id="drum-machine">
-        <div id="display">{latestDrum}</div>
+        <div id="display">
+          <p>{latestDrum}</p>
+        </div>
         <div className="drum-pads">
           {drumPads}
         </div>
       </div>
+      <h2>Try using drum pads with the keyboard!</h2>
     </div>
   );
 }

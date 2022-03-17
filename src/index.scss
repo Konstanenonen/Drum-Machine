@@ -10,7 +10,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(253, 252, 253);
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+
+  h1 {
+    color: rgb(3, 163, 163);
+  }
+
+  h2 {
+    margin: 0 20px;
+    color: rgb(3, 163, 163);
+  }
+}
+
 
 #drum-machine {
   width: 200px;
@@ -19,13 +38,33 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(255, 228, 248);
+  border-radius: 5px;
 }
 
 #display {
   margin: 20px 0;
   height: 50px;
   width: 150px;
-  border: solid 2px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: rgb(255, 239, 14);
+  font-weight: bold;
+}
+
+button {
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background-color: rgb(42, 161, 31);
+  border: solid 2px white;
 }
 
 .drum-pads {
